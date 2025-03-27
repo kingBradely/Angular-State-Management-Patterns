@@ -68,7 +68,7 @@ The application implements a box selection feature using two different state man
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/Angular-State-Management-Patterns.git
+   git clone https://github.com/kingBradely/Angular-State-Management-Patterns.git
    cd Angular-State-Management-Patterns
    ```
 
