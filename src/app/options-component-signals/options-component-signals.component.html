@@ -1,0 +1,32 @@
+<div class="options-card">
+    <div class="card-grid">
+        <h5>Front salto's:</h5>
+        <div class="options-list">
+            @for (item of frontSaltoTumbling; track $index) {
+                <button type="button" class="option-button" [class.selected-option]="currentDataSelected && currentDataSelected['value'] === item" (click)="setOptionValue(item)">{{item}}</button>
+            }
+        </div>
+        
+    </div>
+    <div class="card-grid">
+        <h5>back salto's:</h5>
+        <div class="options-list">
+            @for (item of backSaltoTumbling; track $index) {
+                <button type="button" class="option-button" [class.selected-option]="currentDataSelected && currentDataSelected['value'] === item" (click)="setOptionValue(item)">{{item}}</button>
+            }
+        </div>
+        
+    </div>
+    <div class="card-grid">
+        <h5>Other:</h5>
+        <div class="options-list">
+            @for (item of otherTumbling; track $index) {
+                <button type="button" class="option-button" [class.selected-option]="currentDataSelected && currentDataSelected['value'] === item" (click)="setOptionValue(item)">{{item}}</button>
+            }
+        </div>
+        
+    </div>
+    
+</div>
+
+{{currentPosition}}

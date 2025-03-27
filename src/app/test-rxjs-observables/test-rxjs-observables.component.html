@@ -1,0 +1,15 @@
+<div class="tab-list" >
+    @for (item of optionBoxes; track $index) {
+        <div class="tab" [class.active-tab]="item.index === currentTabButton">
+            <div class="tab-header">
+                <div class="tab-index">{{item.index}}</div>
+            </div>
+            <button class="tab-button" (click)="selectTabButton(item.index)">{{item.value}}</button>
+        </div>
+    }
+    
+</div>
+<button class="rest-btn" (click)="resetOptionsBox()">reset</button>
+@if (showOptionsCard) {
+    <app-options-component-rxjs></app-options-component-rxjs>
+}
